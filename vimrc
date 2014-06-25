@@ -1,10 +1,10 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
+call vundle#begin('~/.dotfiles/vim/bundle')
 
-Let Vundle manage Vundle
+" Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
 " My Bundles
@@ -101,7 +101,7 @@ let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'passive' }
-let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
+" let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
 
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
@@ -110,8 +110,21 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 5
 
-" Go programming
-set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
-
-" Quit with :Q
 command -nargs=0 Quit :qa!
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
