@@ -72,3 +72,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/rp
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# load boxen environment
+source /opt/boxen/env.sh
