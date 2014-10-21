@@ -12,3 +12,15 @@ echo 'Sym-linking ~/.zshrc to ~/.dotfiles/zshrc'
 ln -s ~/.dotfiles/zshrc ~/.zshrc 
 
 source ~/.zshrc
+
+if [ -e ~/.vim ]; then
+  rm ~/.vim
+fi
+echo 'Sym-linking ~/.vim to ~/.dotfiles/vim'
+ln -s ~/.dotfiles/vim ~/.vim
+
+if [ -e ~/.vimrc ]; then
+  rm ~/.vimrc
+fi
+echo 'Sym-linking ~/.vimrc to ~/.dotfiles/vimrc'
+ln -s ~/.dotfiles/vimrc ~/.vimrc
