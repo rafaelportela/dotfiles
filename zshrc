@@ -1,3 +1,20 @@
+#### Lines configured by zsh-newuser-install
+HISTFILE=~/.dotfiles/histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory extendedglob nomatch
+unsetopt autocd beep notify
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/rportela/.zshrc'
+
+autoload -Uz compinit
+compinit
+#### End of lines added by compinstall
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.dotfiles/zsh
 
