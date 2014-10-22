@@ -77,9 +77,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/rportela/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -92,6 +89,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/rp
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+export ANDROID_HOME=/opt/boxen/homebrew/Cellar/android-sdk/23-boxen1
 
 # load boxen environment
 source /opt/boxen/env.sh
