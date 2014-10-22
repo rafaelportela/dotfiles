@@ -1,8 +1,8 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
-call vundle#begin('~/.dotfiles/vim/bundle')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/bundle')
 
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
@@ -25,9 +25,9 @@ Bundle 'slim-template/vim-slim'
 
 filetype plugin indent on
 
-let mapleader=","
+let mapleader="\\"
 
-color jellybeans
+" color jellybeans
 
 set cursorline
 set expandtab

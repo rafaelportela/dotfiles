@@ -1,26 +1,31 @@
 #!/bin/bash
 
-echo 'Cloning on-my-zsh'
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-chsh -s /bin/zsh
-exec zsh
-
-if [ -e ~/.zshrc ]; then
-  rm ~/.zshrc
-fi
-echo 'Sym-linking ~/.zshrc to ~/.dotfiles/zshrc'
-ln -s ~/.dotfiles/zshrc ~/.zshrc 
-
-source ~/.zshrc
-
+echo '+ Installing vundle'
 if [ -e ~/.vim ]; then
-  rm ~/.vim
+  rm -rf ~/.vim
 fi
-echo 'Sym-linking ~/.vim to ~/.dotfiles/vim'
-ln -s ~/.dotfiles/vim ~/.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim --depth 1
 
+echo '+ Setting up ~/.vimrc'
 if [ -e ~/.vimrc ]; then
   rm ~/.vimrc
 fi
-echo 'Sym-linking ~/.vimrc to ~/.dotfiles/vimrc'
 ln -s ~/.dotfiles/vimrc ~/.vimrc
+
+echo '+ Installing on-my-zsh'
+if [ -e ~/.oh-my-zsh ]; then
+  rm -rf ~/.oh-my-zsh
+fi
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh --depth 1
+
+echo '+ Setting up ~/.zshrc'
+if [ -e ~/.zshrc ]; then
+  rm -rf ~/.zshrc
+fi
+ln -s ~/.dotfiles/zshrc ~/.zshrc 
+
+echo '+ Setting zsh as default shell'
+chsh -s /bin/zsh
+
+echo '+ Install selected vim plugins with: vim +PluginInstall +qall'
+exec zsh
