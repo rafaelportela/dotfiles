@@ -93,5 +93,8 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Users/rp
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
 export ANDROID_HOME=/opt/boxen/homebrew/Cellar/android-sdk/23-boxen1
 
+alias be='noglob bundle exec'
+alias rake='noglob rake'
+
 # load boxen environment
 source /opt/boxen/env.sh
