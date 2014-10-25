@@ -1,5 +1,8 @@
 set nocompatible
-filetype off
+syntax on
+filetype on
+filetype indent on
+filetype plugin on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin('~/.vim/bundle')
@@ -22,6 +25,7 @@ Bundle 'rking/ag.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'slim-template/vim-slim'
+Bundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
