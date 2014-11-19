@@ -1,0 +1,23 @@
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[core]
+  excludesfile = /opt/boxen/config/git/gitignore
+	editor = /usr/bin/vim
+
+[user]
+	name = Rafael Portela
+	email = rafaelportela90@gmail.com
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  l  = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --decorate --date=short

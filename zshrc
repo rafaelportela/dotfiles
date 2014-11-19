@@ -95,6 +95,9 @@ export ANDROID_HOME=/opt/boxen/homebrew/Cellar/android-sdk/23-boxen1
 
 alias be='noglob bundle exec'
 alias rake='noglob rake'
+alias co='git checkout'
+alias ci='git commit'
+alias cim='git commit -m'
 
 # load boxen environment
 source /opt/boxen/env.sh

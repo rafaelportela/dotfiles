@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo '+ Setting up ~/.gitconfig'
+if [ -e ~/.gitconfig ]; then
+  rm -rf ~/.gitconfig
+fi
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+
 echo '+ Installing vundle'
 if [ -e ~/.vim ]; then
   rm -rf ~/.vim
