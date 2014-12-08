@@ -26,6 +26,8 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'slim-template/vim-slim'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 
 filetype plugin indent on
 
