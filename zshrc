@@ -91,7 +91,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
-export ANDROID_HOME=/opt/boxen/homebrew/Cellar/android-sdk/23-boxen1
+export ANDROID_HOME=/Users/rportela/Library/Android/sdk
 export STUDIO_JDK=$JAVA_HOME
 
 alias be='noglob bundle exec'
