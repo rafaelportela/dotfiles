@@ -100,9 +100,6 @@ alias co='git checkout'
 alias ci='git commit'
 alias cim='git commit -m'
 
-# load boxen environment
-source /opt/boxen/env.sh
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
