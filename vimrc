@@ -17,7 +17,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
