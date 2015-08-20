@@ -110,3 +110,6 @@ export DOCKER_TLS_VERIFY=1
 
 # rbenv setup
 eval "$(rbenv init -)"
+
+# setup virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
