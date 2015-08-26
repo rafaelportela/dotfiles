@@ -113,3 +113,6 @@ eval "$(rbenv init -)"
 
 # setup virtualenvwrapper
 source /usr/local/bin/virtualenvwrapper.sh
+
+# nodenv
+eval "$(nodenv init -)"
