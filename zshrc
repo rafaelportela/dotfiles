@@ -115,7 +115,7 @@ eval "$(rbenv init -)"
 source /usr/local/bin/virtualenvwrapper.sh
 
 # nodenv
-eval "$(nodenv init -)"
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # brew-wrap, used by homebrew-file
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
