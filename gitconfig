@@ -1,17 +1,16 @@
-
 [hub]
-protocol = https
+  protocol = https
 
 [credential]
-helper = /opt/boxen/bin/boxen-git-credential
+  helper = /opt/boxen/bin/boxen-git-credential
 
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
 
 [user]
-	name = Rafael Portela
-	email = rafaelportela90@gmail.com
+  name = Rafael Portela
+  email = rafaelportela90@gmail.com
 
 [alias]
   st = status
