@@ -116,3 +116,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # nodenv
 eval "$(nodenv init -)"
+
+# brew-wrap, used by homebrew-file
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
