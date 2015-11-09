@@ -1,10 +1,15 @@
 #!/bin/bash
 
-echo '+ Setting up ~/.gitconfig'
+echo '+ Setting up Git configurations'
 if [ -e ~/.gitconfig ]; then
   rm -rf ~/.gitconfig
 fi
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+
+if [ -e ~/.git-templates ]; then
+  rm -rf ~/.git-templates
+fi
+ln -s ~/.dotfiles/git-templates ~/.git-templates
 
 echo '+ Installing vundle'
 if [ -e ~/.vim ]; then

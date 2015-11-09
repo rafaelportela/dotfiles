@@ -22,3 +22,6 @@
   l  = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --decorate --date=short
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[init]
+  templatedir = ~/.git-templates

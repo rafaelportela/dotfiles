@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Add prefix content to git commit messages been prepared
+# in .git/GIT_COMMIT_MSG referenced at $1
+
+if [ x != x${GIT_MSG_PREFIX} ]; then
+  echo "${GIT_MSG_PREFIX} `cat ${1}`" > ${1}
+fi
