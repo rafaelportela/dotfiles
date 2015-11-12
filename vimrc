@@ -69,9 +69,6 @@ au BufRead,BufNewFile *.go set filetype=go
 " No show command
 autocmd VimEnter * set nosc
 
-" Quick ESC
-imap jj <ESC>
-
 " Jump to the next row on long lines
 map <Down> gj
 map <Up>   gk
