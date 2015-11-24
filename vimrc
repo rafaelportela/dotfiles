@@ -29,6 +29,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
+Bundle 'junegunn/vim-easy-align'
 
 filetype plugin indent on
 
