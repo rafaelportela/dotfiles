@@ -30,6 +30,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'junegunn/vim-easy-align'
+Bundle 'rust-lang/rust.vim'
 
 filetype plugin indent on
 
