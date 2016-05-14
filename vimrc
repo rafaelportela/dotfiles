@@ -58,6 +58,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" use old regex engine (new engine causing slow syntax highlighting)
+set re=1
+
 " Automatic formatting
 autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.go :%s/\s\+$//e
