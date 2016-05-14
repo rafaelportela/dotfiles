@@ -31,6 +31,7 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-fireplace'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'rust-lang/rust.vim'
+Bundle 'thoughtbot/vim-rspec'
 
 filetype plugin indent on
 
@@ -120,6 +121,11 @@ let g:ctrlp_max_depth = 5
 
 command -nargs=0 Quit :qa!
 
+" vim-spec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
