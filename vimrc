@@ -125,6 +125,7 @@ let g:ctrlp_max_depth = 5
 command -nargs=0 Quit :qa!
 
 " vim-spec
+let g:rspec_command = "!bundle exec rspec -fd {spec}"
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
