@@ -58,6 +58,10 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" disable beep
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
 " use old regex engine (new engine causing slow syntax highlighting)
 set re=1
 
