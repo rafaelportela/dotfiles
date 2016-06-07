@@ -30,6 +30,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'rust-lang/rust.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'ntpeters/vim-better-whitespace'
 
 let mapleader="\\"
 
