@@ -2,36 +2,35 @@ set nocompatible
 syntax on
 filetype on
 filetype indent on
-filetype plugin on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin('~/.vim/bundle')
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-" My Bundles
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Xuyuanp/nerdtree-git-plugin'
-Bundle 'kien/ctrlp.vim'
-Bundle 'rking/ag.vim'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'slim-template/vim-slim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
-Bundle 'junegunn/vim-easy-align'
-Bundle 'rust-lang/rust.vim'
-Bundle 'thoughtbot/vim-rspec'
+" My Plugins
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'slim-template/vim-slim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'rust-lang/rust.vim'
+Plugin 'thoughtbot/vim-rspec'
 
 filetype plugin indent on
 
