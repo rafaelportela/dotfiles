@@ -29,6 +29,7 @@ Plugin 'tpope/vim-fireplace'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'rust-lang/rust.vim'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'lambdatoast/elm.vim'
 
 let mapleader="\\"
 
@@ -129,6 +130,11 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" elm.vim
+nnoremap <leader>el :ElmEvalLine<CR>
+vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
+nnoremap <leader>em :ElmMakeCurrentFile<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
