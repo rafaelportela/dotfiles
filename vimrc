@@ -32,8 +32,6 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'rust-lang/rust.vim'
 Plugin 'thoughtbot/vim-rspec'
 
-filetype plugin indent on
-
 let mapleader="\\"
 
 " color jellybeans
