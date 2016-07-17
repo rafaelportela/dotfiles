@@ -31,6 +31,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'pangloss/vim-javascript'
+Plugin 'helino/vim-json'
 
 let mapleader="\\"
 
