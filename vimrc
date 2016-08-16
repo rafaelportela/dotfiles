@@ -143,6 +143,9 @@ nnoremap <leader>em :ElmMakeCurrentFile<CR>
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+" Specific indentation by filetype
+autocmd FileType perl setlocal shiftwidth=4 tabstop=4
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
