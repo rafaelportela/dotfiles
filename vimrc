@@ -145,6 +145,8 @@ nmap ga <Plug>(EasyAlign)
 
 " Specific indentation by filetype
 autocmd FileType perl setlocal shiftwidth=4 tabstop=4
+nnoremap <silent> tt :!perltidy -q<Enter>
+vnoremap <silent> tt :!perltidy -q<Enter>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
