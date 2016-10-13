@@ -121,6 +121,12 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
 
+# Initialization for FDK command line tools.
+FDK_EXE="${HOME}/bin/FDK/Tools/osx"
+PATH=${PATH}:"${HOME}/bin/FDK/Tools/osx"
+export PATH
+export FDK_EXE
+
 PATH="/Users/rportela/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/rportela/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/Users/rportela/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
