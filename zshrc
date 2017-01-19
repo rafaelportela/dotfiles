@@ -137,3 +137,6 @@ PERL_MM_OPT="INSTALL_BASE=/Users/rportela/perl5"; export PERL_MM_OPT;
 export GOPATH=$HOME/code/go
 export PATH="/usr/local/go/bin:$PATH";
 alias gopath="cd $GOPATH"
+
+# hdevtools
+export PATH="$HOME/.local/bin/:$PATH"
