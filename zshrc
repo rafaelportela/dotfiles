@@ -105,7 +105,7 @@ alias ll='ls -la'
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Docker
-eval $(docker-machine env default)
+if which docker-machine > /dev/null; then eval $(docker-machine env default); fi
 
 # rbenv setup
 eval "$(rbenv init -)"
