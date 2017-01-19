@@ -33,6 +33,7 @@ Plugin 'lambdatoast/elm.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pangloss/vim-javascript'
 Plugin 'helino/vim-json'
+Plugin 'bitc/vim-hdevtools'
 
 let mapleader="\\"
 
@@ -147,6 +148,10 @@ nmap ga <Plug>(EasyAlign)
 autocmd FileType perl setlocal shiftwidth=4 tabstop=4
 nnoremap <silent> tt :!perltidy -q<Enter>
 vnoremap <silent> tt :!perltidy -q<Enter>
+
+" vim-hdevtools
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
