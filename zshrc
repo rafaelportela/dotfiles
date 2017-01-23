@@ -139,4 +139,4 @@ export PATH="/usr/local/go/bin:$PATH";
 alias gopath="cd $GOPATH"
 
 # hdevtools
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.stack/programs/x86_64-osx/ghc-8.0.1/bin:$HOME/.local/bin/:$PATH"
