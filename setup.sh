@@ -22,6 +22,8 @@ if [ -e ~/.vimrc ]; then
   rm ~/.vimrc
 fi
 ln -s ~/.dotfiles/vimrc ~/.vimrc
+mkdir ~/.vim
+ln -s ~/.dotfiles/vim-colors ~/.vim/colors
 
 echo '+ Installing on-my-zsh'
 if [ -e ~/.oh-my-zsh ]; then
@@ -33,7 +35,7 @@ echo '+ Setting up ~/.zshrc'
 if [ -e ~/.zshrc ]; then
   rm -rf ~/.zshrc
 fi
-ln -s ~/.dotfiles/zshrc ~/.zshrc 
+ln -s ~/.dotfiles/zshrc ~/.zshrc
 
 echo '+ Setting zsh as default shell'
 chsh -s /bin/zsh

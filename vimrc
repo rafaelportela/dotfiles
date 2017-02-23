@@ -37,7 +37,9 @@ Plugin 'bitc/vim-hdevtools'
 
 let mapleader="\\"
 
-" color jellybeans
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
 
 set cursorline
 set expandtab
