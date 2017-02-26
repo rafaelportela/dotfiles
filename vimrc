@@ -34,6 +34,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'pangloss/vim-javascript'
 Plugin 'helino/vim-json'
 Plugin 'bitc/vim-hdevtools'
+Plugin 'fatih/vim-go'
 
 let mapleader="\\"
 
@@ -154,6 +155,19 @@ vnoremap <silent> tt :!perltidy -q<Enter>
 " vim-hdevtools
 au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
 au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+
+" vim-go
+au FileType go nmap <leader>r  <Plug>(go-run)
+au FileType go nmap <leader>b  <Plug>(go-build)
+au FileType go nmap <leader>t  <Plug>(go-test)
+au FileType go nmap <leader>c  <Plug>(go-coverage)
+au FileType go nmap <leader>cc <Plug>(go-coverage-clear)
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
