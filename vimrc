@@ -50,7 +50,7 @@ set clipboard=unnamed
 set synmaxcol=128
 set ttyscroll=10
 set encoding=utf-8
-set tabstop=2
+set tabstop=4
 set nowrap
 set number
 set expandtab
@@ -70,11 +70,16 @@ set re=1
 
 " Automatic formatting
 autocmd BufWritePre *.rb :%s/\s\+$//e
-autocmd BufWritePre *.go :%s/\s\+$//e
 autocmd BufWritePre *.haml :%s/\s\+$//e
 autocmd BufWritePre *.html :%s/\s\+$//e
 autocmd BufWritePre *.scss :%s/\s\+$//e
 autocmd BufWritePre *.slim :%s/\s\+$//e
+
+" Language specific indentation style
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype perl setlocal ts=4 sw=4 expandtab
+autocmd Filetype go   setlocal ts=4 sw=4 sts=0 noexpandtab
 
 au BufNewFile * set noeol
 au BufRead,BufNewFile *.go set filetype=go
