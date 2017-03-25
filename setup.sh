@@ -37,6 +37,12 @@ if [ -e ~/.zshrc ]; then
 fi
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 
+echo '+ Setting up ~/.tmux.conf'
+if [ -e ~/.tmux.conf ]; then
+  rm -rf ~/.tmux.conf
+fi
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+
 echo '+ Setting zsh as default shell'
 chsh -s /bin/zsh
 
