@@ -83,6 +83,7 @@ autocmd Filetype go   setlocal ts=4 sw=4 sts=0 noexpandtab
 
 au BufNewFile * set noeol
 au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.t  set filetype=perl
 
 " No show command
 autocmd VimEnter * set nosc
